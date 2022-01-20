@@ -35,7 +35,7 @@ long long itc_len(string str);
 
 string itc_slice_str(string str, int start, int finish);
 
-int itc_find_str(string str1, string str2);
+int itc_find_str(string str1, char str2);
 
 int itc_max_lst(const vector <int> &lst);
 
