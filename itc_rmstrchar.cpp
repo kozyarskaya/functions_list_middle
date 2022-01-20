@@ -6,6 +6,8 @@ string itc_rmstrchar(string str, string less1){
     int lon = itc_len(less1);
     if (less1 == "")
         return str;
+    if (less1 == str)
+        return "";
     while(ind != -1){
         new_str = itc_slice_str(str, start, ind - 1);
         new_str += itc_slice_str(str, ind + lon, itc_len(str));
@@ -14,4 +16,3 @@ string itc_rmstrchar(string str, string less1){
     }
     return new_str;
 }
-
